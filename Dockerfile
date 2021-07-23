@@ -12,5 +12,4 @@ RUN source /usr/local/rvm/scripts/rvm
 RUN echo "ruby_url=https://cache.ruby-china.com/pub/ruby" > /usr/local/rvm/user/db
 RUN rvm install 2.3.3
 RUN rvm use 2.3.3
-RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 RUN gem install redis

@@ -6,6 +6,6 @@ RUN curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
 RUN curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
 RUN curl -L get.rvm.io | bash -s stable
 RUN /bin/bash -c "source /usr/local/rvm/scripts/rvm"
-RUN rvm install 2.3.3
-RUN rvm use 2.3.3
-RUN gem install redis
+RUN /bin/bash -c rvm install 2.3.3
+RUN /bin/bash -c rvm use 2.3.3
+RUN /bin/bash -c gem install redis

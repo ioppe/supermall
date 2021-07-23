@@ -1,10 +1,6 @@
 FROM redis:4.0.1
 RUN apt -y update
-RUN apt-get -y install wget
 RUN apt-get -y install curl
-RUN wget http://download.redis.io/releases/redis-4.0.1.tar.gz
-RUN tar xvf redis-4.0.1.tar.gz
-RUN curl -L get.rvm.io | bash -s stable
 RUN curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
 RUN curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
 RUN curl -L get.rvm.io | bash -s stable
